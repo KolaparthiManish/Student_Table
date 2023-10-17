@@ -97,6 +97,7 @@ function Form() {
     if (!isNaN(birthDate)) {
       const ageDiff = currentDate - birthDate;
       const ageDate = new Date(ageDiff);
+      console.log(ageDiff);
       return Math.abs(ageDate.getUTCFullYear() - 1970);
     } else {
       return '';
